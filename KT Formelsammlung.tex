@@ -156,7 +156,9 @@ t &= \frac{M}{2 \cdot A_m} = const
 
 
 \begin{align*}
-I_t &= \frac{4 \cdot A_m^2}{\frac{l_1}{h_1} + \frac{l_2}{h_2} + \frac{l_3}{h_3} + \frac{l_4}{h_4}}
+I_t &= \frac{4 \cdot A_m^2}{\frac{l_1}{h_1} + \frac{l_2}{h_2} + \frac{l_3}{h_3} + \frac{l_4}{h_4}} \\
+\\
+W_t &= 2 \cdot h_{min} \cdot A_m
 \end{align*}
 
 \newpage
@@ -222,11 +224,15 @@ I_t &= \frac{1}{3} \cdot \eta \cdot \sum_{i}^{} l_i \cdot h_t^3
 
 \section{Mechanismen}
 
-In der Ebene gibt des 3 Freiheitsgrade, im Raum 6. Wegen dem Gestell hat man dann $b \cdot (n-1)$ Freiheitsgrade. Jedes Gelenk eliminiert $u = b - f$ Freiheitsgrade.
+In der Ebene gibt des $b = 3$ Freiheitsgrade, im Raum $b = 6$. Wegen dem Gestell hat man dann $b \cdot (n-1)$ Freiheitsgrade. Jedes Gelenk eliminiert $u = b - f$ Freiheitsgrade.
 
 \begin{align*}
 \intertext{Laufgrad:}
 F &= b \cdot \left( n - 1 \right) - g \cdot b + \sum_{i=1}^{g} f_i \\
+\\
+n &= \text{Anzahl Glieder} \\
+g &= \text{Anzahl Gelenke} \\
+F_i &= \text{Freiheitsgrad von Gelenk i} \\
 F &\leq -1 \qquad \text{überbestimmt, nicht montierbar} \\
 F &= 0 \qquad \text{statisch bestimmt} \\
 F &= 1 \qquad \text{ein Getriebeglied bewegt auch alle anderen, ein Antrieb} \\
@@ -287,18 +293,45 @@ K &= N + A_o = N + E_c - \frac{T}{2}
 	\item[3)] Zahl der Bauteile
 	\item[4)] Anordnung der Bauteile
 	\item[5)] Abmessungen	
+	\item[6)] Dimension
 \end{itemize}
 
 
+\newpage
+
+\section{Bauweisen}
 
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.5]{Bauweise1.jpg}
+	%\includegraphics[scale=0.9]{leer.png}
+	\caption{Partialbauweise vs Totalbauweise}
+	\end{figure}
 
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.5]{Bauweise2.jpg}
+	%\includegraphics[scale=0.9]{leer.png}
+	\caption{Differentialbauweise vs Itegralbauweise}
+\end{figure}
 
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.5]{Bauweise3.jpg}
+	%\includegraphics[scale=0.9]{leer.png}
+	\caption{Monofunktionalbauweise vs Multifunktionalbauweise}
+\end{figure}
 
 
-
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.4]{Bauweise4.jpg}
+	%\includegraphics[scale=0.9]{leer.png}
+	\caption{Monobaugruppenbauweise vs Multibaugruppenbauweise}
+\end{figure}
 
 
 
